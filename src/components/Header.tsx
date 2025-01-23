@@ -15,7 +15,7 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             <a href="#menu" className="text-white hover:text-amber-600">Cardápio</a>
-            <a href="#promotions" className="text-white hover:text-amber-600">Promoções</a>
+            {/* <a href="#promotions" className="text-white hover:text-amber-600">Promoções</a> */}
             <a href="#about" className="text-white hover:text-amber-600">Sobre Nós</a>
             <a href="#contact" className="text-white hover:text-amber-600">Contato</a>
           </nav>
