@@ -17,8 +17,7 @@ const Hero = () => {
             Espetaria Miro Freitas
           </h1>
           <p className="text-xl mb-8">
-            Sabores únicos em cada espeto, tradição e qualidade desde 1995.
-            Uma experiência gastronômica inesquecível para você e sua família.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, doloremque.
           </p>
           <a 
             href="#menu"
