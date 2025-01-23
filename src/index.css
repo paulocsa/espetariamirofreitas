@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: 'Adagio Serif';
+    src: url('/caminho/para/AdagioSerif-Bold.woff2') format('woff2'),
+         url('/caminho/para/AdagioSerif-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
