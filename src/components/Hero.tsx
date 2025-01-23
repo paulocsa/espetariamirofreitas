@@ -17,7 +17,8 @@ const Hero = () => {
             Espetaria Miro Freitas
           </h1>
           <p className="text-xl mb-8">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, doloremque.
+          Um sonho feito de carinho e sabor! Aqui, cada espetinho é preparado para trazer alegria e momentos inesquecíveis. 
+          <br />Venha viver essa experiência com a gente!
           </p>
           <a 
             href="#menu"

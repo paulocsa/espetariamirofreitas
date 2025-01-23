@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, User, MessageCircle, Smartphone } from 'lucide-react';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -26,51 +26,61 @@ const Contact = () => {
         </h2>
         
         <div className="grid md:grid-cols-2 gap-12">
+          {/* Formulário de Contato */}
           <div>
             <form className="bg-white p-8 rounded-lg shadow-md" onSubmit={handleSubmit}>
               <div className="mb-6">
                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
                   Nome
                 </label>
-                <input
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500"
-                  id="name"
-                  type="text"
-                  placeholder="Seu nome"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  required
-                />
+                <div className="relative">
+                  <User className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+                  <input
+                    className="w-full pl-10 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500"
+                    id="name"
+                    type="text"
+                    placeholder="Seu nome"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    required
+                  />
+                </div>
               </div>
               
               <div className="mb-6">
                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="phone">
                   Telefone
                 </label>
-                <input
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500"
-                  id="phone"
-                  type="tel"
-                  placeholder="(00) 00000-0000"
-                  value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
-                  required
-                />
+                <div className="relative">
+                  <Smartphone className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+                  <input
+                    className="w-full pl-10 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500"
+                    id="phone"
+                    type="tel"
+                    placeholder="(00) 00000-0000"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
+                    required
+                  />
+                </div>
               </div>
               
               <div className="mb-6">
                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
                   Mensagem
                 </label>
-                <textarea
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500"
-                  id="message"
-                  rows={4}
-                  placeholder="Sua mensagem"
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                  required
-                ></textarea>
+                <div className="relative">
+                  <MessageCircle className="absolute left-3 top-4 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+                  <textarea
+                    className="w-full pl-10 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500"
+                    id="message"
+                    rows={4}
+                    placeholder="Sua mensagem"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    required
+                  ></textarea>
+                </div>
               </div>
               
               <button
@@ -82,6 +92,7 @@ const Contact = () => {
             </form>
           </div>
           
+          {/* Informações de Contato e Localização */}
           <div>
             <div className="bg-white p-8 rounded-lg shadow-md mb-8">
               <h3 className="text-2xl font-semibold mb-6">Informações de Contato</h3>
@@ -89,7 +100,7 @@ const Contact = () => {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Phone className="w-5 h-5 text-amber-600 mr-3" />
-                  <span>(11) 99999-9999</span>
+                  <span>(13) 99650-6213</span>
                 </div>
                 
                 <div className="flex items-center">
